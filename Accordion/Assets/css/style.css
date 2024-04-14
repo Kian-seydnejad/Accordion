@@ -1,0 +1,33 @@
+body {
+    background-color: #bedfe8;
+}
+
+.label {
+    background-color: #2694af;
+    cursor: pointer;
+}
+
+.label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.context-bx.active .label::before {
+    content: '-';
+}
+
+
+
+.content {
+    height: 0px;
+    transition: 0.5s;
+    padding: 0!important;
+}
+.contextbx.active .content{
+    height: 150px;
+    padding: 10px;
+}
+
